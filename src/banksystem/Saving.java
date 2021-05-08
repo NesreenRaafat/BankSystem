@@ -1,5 +1,22 @@
-package banksystem;
-
-public class Saving {
-
+public class Saving extends Account {
+    float Interst;
+    //constructors
+    public Saving(float Interst, float Balance){
+        super(Balance);
+        this.Interst=Interst;
+    }
+    //Methods
+    public Saving(){
+        Interst=0.0f;
+    }
+    //Getter
+    public float getinterst(){
+        return Interst;
+    }
+    //Setter
+    public void setinterst(float Interst){
+        this.Interst=Interst;
+        
+    }
+    
 }
